@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Api</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/e74fb0d79a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Where in the World?</h1>
+        <button class="btn-toggle" id="toggle">
+          <i class="fas fa-moon"></i>
+          <i class="far fa-moon"></i>Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <input
+          id="search"
+          class="search"
+          type="text"
+          class="svg-inline--fa fa-search fa-w-16 fa-fw"
+          placeholder="Search for a Country...."
+          style="width: 38em; height: 54px;"
+        />
+        <div class="dropdown" id="filter" style="height: 54px;">
+          Filter By Region <i class="fas fa-chevron-down"></i>
+          <ul>
+            <li>All</li>
+            <li>Asia</li>
+            <li>America</li>
+            <li>Europe</li>
+            <li>Oceania</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="container">
+        <button class="btn-close" id="close">
+          <i class="fas fa-arrow-left"></i>Back
+        </button>
+        <img src="" alt="" />
+        <div class="modal-body"></div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container countries" id="countries">
+        <div class="loader">Country Loading...</div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
