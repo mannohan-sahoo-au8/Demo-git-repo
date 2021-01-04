@@ -1,0 +1,42 @@
+[
+{
+  "_id": "1",
+  "name": "Nike",
+  "category": "1",
+  "image":[
+      {"url":"https://i.ibb.co/wZn57t1/414t-JHAWv-L-SX395-SY395.jpg"}
+  ],
+  "video":"link here",
+  "cost": 1699,
+  "quantity":2000,
+  "rating":4,
+  "about":"These Nike running shoes ensures to provide you with the required performance. Its mesh upper will offer the necessary stability and support to your feet, while the rubber sole will negate the chances of accidental slips. Showcasing a round shaped tip, you can wear this pair with any sportswear for a complete look.",
+  "review":[
+      {
+          "id":"1",
+          "name":"santosh",
+          "comment":"great product"
+      }
+  ]
+},
+{
+"_id": "2",
+  "name": "Red Chief",
+  "category": "2",
+  "image":[
+      {"url":"https://i.ibb.co/vwNv2Qh/81l5b-HHZLz-L-UX625.jpg"}
+  ],
+  "video":"link here",
+  "cost": 2899,
+  "quantity":2080,
+  "rating":4,
+  "about":"Elevate your style with this classy pair of Casual Shoe from the house of Red Chief brand. Featuring a contemporary refined design with exceptional comfort, this pair is perfect to give your quintessential dressing an upgrade.",
+  "review":[
+      {
+          "id":"1",
+          "name":"amit",
+          "comment":"nice shoe"
+      }
+  ]
+}
+]

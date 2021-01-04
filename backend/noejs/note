@@ -1,0 +1,33 @@
+nodejs
+>> single thread,non blocking, asyn input output
+>> javascript run time enviroment
+>> chrome v8 engine
+
+callback
+> return promises
+
+REPL=> Read Eval Print Loop
+
+NPM => Node Package Manager
+
+JSON => javaScript Object Notation
+     => Data represent in key value pair
+     
+package.json => entry point of application
+             => it contain metadata
+             => packages
+generate package.json > npm init 
+
+> step to install package
+1.npm i packagename  // above node version 8
+2.npm i packagename --save // bewow node version 8 it is mandatory
+3.npm i packagename --save-dev
+4.npm i -g packagename
+            
+Inbuilt Packages:
+  1.FS
+  2.OS
+  3.http
+  4.buffer
+
+

@@ -1,0 +1,7 @@
+req => we send to the server
+  query = /
+  queryparams  = ?
+  
+res=> output of server will come in response
+  status code = 200(fine),400(not fine)
+  data

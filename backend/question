@@ -1,0 +1,12 @@
+Redis With Mongodb
+
+Make use of redis and mongodb to create applications that perform better.
+First save list of city in the mongodb
+Url for data: https://developerfunnel.herokuapp.com/location
+
+Now the user will send the city name in query params. 
+First check data is part of redis if not that search in Mongo.
+
+If Find in mongo moves to redis and returns the output.
+
+Bonus: If you can connect with react and make UI.

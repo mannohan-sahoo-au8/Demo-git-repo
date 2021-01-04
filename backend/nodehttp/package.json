@@ -1,0 +1,13 @@
+{
+  "name": "nodehttp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "http.js",
+  "scripts": {
+    "start": "node http.js",
+    "dev":"nodemon http.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
