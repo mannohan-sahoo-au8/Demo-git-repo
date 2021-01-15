@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog App</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Edit APP</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/posts">Home</a></li>
+            <li><a href="/addPost">Add Post</a></li>
+            <% if (userData.role == "Admin") { %>
+              <li><a href="/allusers">Admin</a></li>
+            <%}%>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="offset-md-5 col-md-5">
+        <a href="/posts" class="btn btn-warning">Posts</a>
+      </div>
+    </div>
+    <form action="/editpost/<%=data._id%>" method="POST">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input name="title" id="title" class="form-control" placeholder="Enter your title" value="<%=data.title%>">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input name="description" id="description" type="description" class="form-control" placeholder="Enter description" value="<%=data.description%>">
+      </div>
+      <button type="submit" class="btn btn-success">Update</button>
+    </form>
+  </div>
+</body>
+</html>
