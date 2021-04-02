@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p></p>
+  <button>Start</button>
+  <button id="btn">Stop</button>
+
+
+  <script>
+    const button = document.querySelector("button")
+    const btn = document.querySelector("#btn")
+    const timingCount = document.querySelector("p")
+
+    let timeRef
+    let num = 12
+
+    const countNumber = () => {
+      timeRef = setInterval(() => {
+        timingCount.innerHTML = `${num}`
+        num--
+      }, 1000);
+    }
+
+   button.addEventListener("click",countNumber)
+   btn.addEventListener("click",()=> {
+     clearInterval(timeRef)
+   })
+
+
+  </script>
+</body>
+</html>

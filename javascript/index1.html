@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="alert('i am inline event')">Inline event</button>
+  <button onclick="callingFunction()">Calling function</button>
+  <button id="button">addEventListener function</button>
+  <p>Enter your Name: </p><input type="text" id="text">
+  <br>
+  <label for=""> icecream flavour
+    <select name="icecreams" id="icecreams" onchange="selectElement()">
+      <option value="">Select One</option>
+      <option value="chocolate">chocolate</option>
+      <option value="vanilla">vanilla</option>
+      <option value="strawerry">strawerry</option>
+    </select>
+  </label>
+  <div id="result"></div>
+
+  <div id="div">
+    <input id="text2" type="text" placeholder="Enter your Name">
+    <input id="text1" type="text" placeholder="enter your query">
+    <button id="Button" onclick="enterElement()">Enter</button>
+  </div>
+
+
+  <script>
+    const enterElement = () => {
+      const input1 = document.getElementById("text2").value
+      const input2 = document.getElementById("text1").value
+      const div = document.getElementById("div")
+
+      console.log(`${input1} and ${input2}`)
+      div.innerHTML = `Name is ${input1} and query is - ${input2}`
+
+    }
+    
+    // function goback() {
+    //   window.history.back()
+    // }
+    
+    const callingFunction = ()=> {
+      alert("by calling function event")
+    }
+
+    const button = document.querySelector("#button")
+    button.addEventListener("click",() => {
+      alert("I AM ADD EVENT LISTENER EVENET")
+    })
+    
+    const selectElement = () => {
+      const icecreams = document.querySelector("#icecreams").value
+      const input = document.querySelector("#text").value
+      const result = document.querySelector("#result")
+
+      console.log(`${input} and ${icecreams}`)
+      result.innerHTML = `${input} select ${icecreams} icecream`
+
+    }
+
+
+  </script>
+</body>
+</html>
