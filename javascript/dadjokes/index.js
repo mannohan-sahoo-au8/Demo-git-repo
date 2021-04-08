@@ -1,3 +1,8 @@
+//https://icanhazdadjoke.com
+
+const h1Tag = document.querySelector("#text")
+const button = document.querySelector("#btn")
+
 const h1Tag = document.querySelector("#text")
 const button = document.querySelector("button")
 
