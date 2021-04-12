@@ -8,6 +8,8 @@ const tempLoad = () => {
 
   setTimeout(() => {
     temp.innerHTML = "&#xf2ca"
+    temp.style.color = "green"
+
   },1000)
 
   setTimeout(() => {
@@ -20,6 +22,7 @@ const tempLoad = () => {
 
   setTimeout(() => {
     temp.innerHTML = "&#xf2c7"
+    temp.style.color = "red"
   },4000)
 }
 

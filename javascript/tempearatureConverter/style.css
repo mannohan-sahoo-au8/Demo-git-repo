@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aqua;
+  border: black 2px solid;
+  height: 41rem;
+}
+
+.container {
+  text-align: center;
+  margin-top: 10%;
+  border: steelblue 3px solid;
+  width: 50rem;
+  margin-left: 15em;
+  height: 15em;
+}
+
+#height {
+  height: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: tomato;
+  height: 30px;
+  width: 10rem;
+  font-weight: bold;
+}
