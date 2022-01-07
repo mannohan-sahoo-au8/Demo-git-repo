@@ -1,4 +1,0 @@
-1.what is the difference between arrow function and normal function?
-
-2.what is difference between authorization and authentication?
-	

@@ -1,0 +1,11 @@
+HTTP=> a protocol for transfering data which is understod by browser and server.
+	Hyper Text Transfer Protocol.
+
+express-it is a nodejs framework.it is higly extensible.
+next:- allows the request to continue to the next middleware.
+model-represnting your data in code.
+controllers-connecting your models and views
+
+sql vs nosql
+
+ans-sql databases are table based,strong data schema,sql have quries

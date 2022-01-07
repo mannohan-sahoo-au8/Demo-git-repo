@@ -39,11 +39,15 @@ const Some = () => {
 
   return (
    <div>
-     {laptops.map((laptop) => {
-      return <Details laptop={laptop} /> // you can do it in spread operator like {...laptop} instead of laptop={laptop}
-     })}
+    {laptops.map((laptop) => {
+      return <Details laptop={laptop}/>
+    })}
    </div>
   )
 }
 
 export default Some
+
+//  {laptops.map((laptop) => {
+//       return <Details laptop={laptop} /> // you can do it in spread operator like {...laptop} instead of laptop={laptop}
+//      })}

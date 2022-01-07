@@ -5,7 +5,7 @@ counters.forEach((counter) => {
 
 
   const updateCounter = () => {
-    const targetCount = +counter.getAttribute("data-target")
+    const targetCount = +counter.getAttribute("data-target") // + using for convert string into number
 
     const startCount = +counter.innerHTML
 
