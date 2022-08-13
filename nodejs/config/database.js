@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoDB = 'mongodb://localhost/rest_api';
+const mongoDB = 'mongodb://localhost:27017';
 
 mongoose.connect(mongoDB);
 mongoose.Promise(global.Promise);

@@ -25,7 +25,7 @@ const UserSchema = new Schema({
 });
 
 UserSchema.pre('save', function (next) {
-  this.password = bcrypt.hasSync(this.password, saltRounds);
+  this.password = bcrypt.hashSync(this.password, saltRounds);
 
   next();
 });
